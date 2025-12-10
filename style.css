@@ -1,0 +1,210 @@
+:root {
+  --accent: #4caf50;
+  --bg: #f4f4f4;
+  --card-bg: #ffffff;
+  --muted: #666;
+  --light: #f9f9f9;
+  --container-width: 900px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--bg);
+  color: #333;
+}
+
+.site-header {
+  background: var(--card-bg);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.profil-img {
+  border-radius: 50%;
+  border: 5px solid var(--accent);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.site-header h1 {
+  color: #333;
+  margin: 10px 0;
+  font-size: 28px;
+}
+
+.role {
+  color: var(--muted);
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.tagline {
+  color: #999;
+  font-style: italic;
+  margin: 0;
+}
+
+.site-nav {
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--accent);
+  padding: 10px 20px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.container {
+    margin-bottom: 30px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.card h2 {
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  line-height: 2;
+  margin-left: 0;
+  padding-left: 1rem;
+}
+
+.job,
+.education {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: var(--light);
+    border-radius: 5px;
+}
+
+.job h3,
+.education h3 {
+    margin-top: 0;
+}
+
+.muted {
+    color: var(--muted);
+    margin: 5px 0;
+}
+
+.education-title {
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 10px;
+    margin: 30px 0 20px 0;
+}
+
+.contact-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.contact-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-table a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.btn-submit {
+  background: var(--accent);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.site-footer {
+    background: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.site-footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.small {
+    margin: 10px 0;
+    color: #999;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+@media (max-width: 720px) {
+    body {
+        padding: 15px;
+    }
+    .site-header {
+        padding: 30px 20px;
+    }
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+}
